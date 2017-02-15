@@ -1,0 +1,118 @@
+.paragraph {
+  color:purple; 
+  font size:25px;
+}
+#background {
+  background-color:tan;
+}
+#button {
+  width:60px;
+  height:30px;
+  color:white;
+  background-color:black;
+  border-radius:15px;
+}
+header {
+  height:45px;
+  width:35%;
+  border:0.5px tan;
+  background-color:#9d7cff;
+}
+footer {
+  height:40px;
+  width:100%;
+  border:0.5px tan;
+  background-color:#9d7cff;
+}
+.wrap-trivia{
+  height:275px;
+  width:215px;
+  border:0.5 solid black;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.wrap-list{
+  height:95px;
+  width:215px;
+  border:0.5px solid black;
+}
+.wrap-text{
+  color: solid black;
+  font-size:30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#one{
+  height: 150px;
+  width: 150px;
+  background-color: #925bff;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  position: relative;
+  top: 750px;
+}
+#two{
+  height: 150px;
+  width: 150px;
+  background-color: #5b9fff;
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  position: fixed;
+  left: 25%;
+}
+#three{
+  height: 150px;
+  width: 150px;
+  background-color: #ffc156;
+  display: inline-block;
+  position: absolute;
+}
+#body{
+  height: 2048px;
+
+}
+#cookies{
+  padding-top: 15px;
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-top: 3px;
+  font-size: 18px;
+}
+#desserts{
+  font-size: 50px;
+}
+#info{
+  font-size: 19px;
+}
+.navitem{
+  list-style-type:none;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:15px;
+}
+#navmenu{
+  width:300px;
+  height:30px;
+  margin-bottom:50px;
+  text-align:right;
+  float:right;
+}
+a:link{
+  color:blue;
+}
+a:visited{
+  color:purple;
+}
+a:hover{
+  color:red;
+}
+a:active{
+  color:purple;
+}
+#audio{
+  margin-left:20px;
+  margin-top:20px;
+}
