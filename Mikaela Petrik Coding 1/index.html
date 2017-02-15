@@ -1,0 +1,86 @@
+<html> 
+  <head>
+    <link type="text/css" rel="stylesheet" href="main.css"/>
+    <title> Desserts! </title>
+    <script>
+      function banner(){ 
+      var text = confirm("Are you sure you want to continue?"); 
+      return text; 
+  }
+      function answer(){
+       var radio = document.getElementsByName("trivia"); 
+       var selection = false; 
+       var message = "";
+       for( var i = 0; i < radio.length; i++) { 
+        if(radio[i].value == "oli" && radio[i].checked == true) { 
+         selection = true; 
+    } //end if statement 
+   } //end for loop
+   if(selection == true) {
+message = message + "<b><p style='color:green'>Correct!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Try again.</p></b>"; 
+}
+document.getElementById("response").innerHTML = message;
+
+  }//end function answer
+    </script>
+    <style>
+    </style> 
+  </head>
+    <nav>
+     <ul id="navmenu">
+       <li class="navitem"> <a href="common.html"> Most Common Desserts</a> </li>
+       <li class="navitem"> <a href="world.html"> Desserts from around the world</a> </li>
+       <li class="navitem"> <a href="recipes.html"> Recipes</a> </li>
+     </ul>
+    </nav>
+    <body id="background">
+    <center> <span id="desserts"> Desserts! </span> </center>
+ 
+    <center> <h1 class="wrap-text"> (Yum) </h1> </center>
+    <a href="http://firstwefeast.com/eat/2014/03/best-desserts-from-around-the-world/" onclick="return banner()"
+  <header id="cookies"> COOKIES AND CAKES AND PIES, OH MY! </center> </header>
+ </a>
+
+
+    <audio id="audio" width="400" height="220" controls autoplay>
+  <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+    Your browser does not support HTML 5 audio.
+</audio> 
+ 
+  <p id="info"> <u>Pie, cake, cookies.</u> <b>All</b> of these are examples of <i>desserts</i>. Everyone has a favorite dessert from pudding to pie! There are so many desserts from all around the world. This website will give you a look at many different desserts, how to make them, and where they come from.</p>
+  <div class="wrap-list">
+  <ol>
+  	<li class="listitem"> Desserts</li>
+  	<li class="listitem"> Recipies</li>
+  	<li class="listitem"> Around the world</li>
+  </ol>
+</div>
+
+
+<div class="wrap-trivia">
+  <h2>Dessert Trivia Question:</h2>
+  <p class="paragraph"> Which of the following desserts is from holland?</p>
+  <form>
+    <div id="response"> </div>
+    <input type="radio" name="trivia" value="cas"> Castella <br>
+    <input type="radio" name="trivia" value="bak"> Baklava <br>
+    <input type="radio" name="trivia" value="oli"> Oliebollen <br>
+    <input type="radio" name="trivia" value="trl"> Tres Leches <br>
+    <input type="button" value="submit" id="button" onclick="answer()">
+  </div>
+  </form>
+
+<center> <iframe width="400" height="220" 
+  src="https://www.youtube.com/embed/U_MXFP_kguA"
+  frameborder="0" allowfullscreen>
+</iframe> </center>
+
+<center> <img src="http://finedininglovers.cdn.crosscast-system.com/BlogPost/l_11057_dessert-infographic.png"/> </center>
+<center> <img src="http://www.thecleverbride.net/images/magazine/around_the_world_in_eight_desserts_cover_full.jpg"/> </center>
+<hr>
+<center> Mikaela Petrik </center>
+<footer> <center> <middle> Mikaela Petrik </middle> </center> </footer>
+</body> 
+</html>
